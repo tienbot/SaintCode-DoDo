@@ -118,9 +118,8 @@ h2 {
 
 .header {
   margin-top: 25px;
-  margin-bottom: 30px;
 }
-.header__top {
+.header__content {
   height: 48px;
   display: flex;
   justify-content: space-between;
@@ -140,41 +139,48 @@ h2 {
   line-height: 24.5px;
   color: #999;
 }
-.header__bottom {
+
+.menu {
   position: sticky;
   top: 0;
+  z-index: 100;
+  margin: 0 auto;
+  padding: 9px 0;
+  max-width: 1060px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 40px;
+  align-items: center;
   background-color: #fff;
 }
-.header__nav {
+.menu__nav {
   max-width: 467px;
   width: 100%;
 }
-.header__nav .active {
+.menu .active {
   color: #F96900;
 }
-.header__nav ul {
+.menu ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.header__nav li {
+.menu li {
   display: inline;
 }
-.header__nav a {
+.menu li a {
   color: #000;
   font-size: 14px;
   transition: all 0.3s ease-out;
 }
-.header__nav a:hover {
+.menu li a:hover {
   color: #F96900;
 }
 
 .slider {
   position: relative;
+  margin-top: 21px;
   margin-bottom: 70px;
   overflow: hidden;
   display: flex;

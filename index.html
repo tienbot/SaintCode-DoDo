@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__top">
+            <div class="header__content">
                 <div class="header__logo logo">
                     <img src="./icons/logo.svg" alt="логотип">
                     <div class="logo__text">
@@ -28,21 +28,21 @@
                     <p>Звонок бесплатный</p>
                 </div>
             </div>
-            <div class="header__bottom">
-                <nav class="header__nav">
-                    <ul>
-                        <li><a href="#pizza">Пицца</a></li>
-                        <li><a href="#combo">Комбо</a></li>
-                        <li><a href="#snacks">Закуски</a></li>
-                        <li><a href="#deserts">Десерты</a></li>
-                        <li><a href="#drinks">Напити</a></li>
-                        <li><a href="#other">Другие товары</a></li>
-                    </ul>
-                </nav>
-                <a href="#" class="button button--orange header__basket">Корзина</a>
-            </div>
         </div>
     </header>
+    <section class="menu">
+        <nav class="menu__nav">
+            <ul>
+                <li><a href="#pizza">Пицца</a></li>
+                <li><a href="#combo">Комбо</a></li>
+                <li><a href="#snacks">Закуски</a></li>
+                <li><a href="#deserts">Десерты</a></li>
+                <li><a href="#drinks">Напити</a></li>
+                <li><a href="#other">Другие товары</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="button button--orange menu__basket">Корзина</a>
+    </section>
     <section class="slider">
         <img src="./img/slider/3.jpg" alt="Пицца 'Сырный бум' из трех сыров: моцарелла, чеддер, пармезан">
         <img src="./img/slider/1.jpg" alt="Пицца и закуски без мяса" class="active">

@@ -97,8 +97,7 @@ h2
 
 .header
     margin-top: 25px
-    margin-bottom: 30px
-    &__top
+    &__content
         height: 48px
         display: flex
         justify-content: space-between
@@ -114,26 +113,31 @@ h2
             font-size: 15px
             line-height: 24.5px
             color: #999
-    &__bottom
-        position: sticky
-        top: 0
-        display: flex
-        flex-wrap: wrap
-        justify-content: space-between
-        height: 40px
-        background-color: #fff
+
+.menu
+    position: sticky
+    top: 0
+    z-index: 100
+    margin: 0 auto
+    padding: 9px 0
+    max-width: 1060px
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    background-color: #fff
     &__nav
         max-width: 467px
         width: 100%
-        
-        .active
-            color: #F96900
-        ul
-            display: flex
-            flex-wrap: wrap
-            justify-content: space-between
-        li
-            display: inline
+    .active
+        color: #F96900
+    ul
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    li
+        display: inline
         a
             color: #000
             font-size: 14px
@@ -143,6 +147,7 @@ h2
 
 .slider
     position: relative
+    margin-top: 21px
     margin-bottom: 70px
     overflow: hidden
     display: flex
