@@ -3,8 +3,8 @@
     font-weight: 400
     scroll-behavior: smooth
 
-body
-    padding-bottom: 84px
+// body
+//     padding-bottom: 84px
 
 .container
     max-width: 1092px
@@ -229,3 +229,23 @@ h2
         grid-template-columns: repeat(4, 1fr)
         column-gap: 20px
         row-gap: 60px
+    &:last-of-type
+        padding-bottom: 84px
+
+.footer
+    background-color: #464C55
+    padding-top: 50px
+    padding-bottom: 36px
+    &__bottom
+        .wrapper
+            display: flex
+            justify-content: space-between
+    &__logo
+        margin-right: 28.39px
+        font-weight: 800
+        font-size: 25px
+        text-transform: uppercase
+        color: #C7C8CB
+    &__copyright
+        color: #FFFFFF
+        opacity: 0.7
