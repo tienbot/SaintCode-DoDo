@@ -283,7 +283,66 @@ h2 {
   padding-top: 50px;
   padding-bottom: 36px;
 }
-.footer__top hr {
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__lists {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 666px;
+  width: 100%;
+  color: #fff;
+}
+.footer__lists p {
+  margin-bottom: 10px;
+}
+.footer__lists li {
+  margin-bottom: 10px;
+  max-width: 130px;
+  width: 100%;
+}
+.footer__lists a {
+  color: #fff;
+  opacity: 0.7;
+  line-height: 26px;
+  transition: all 0.3s ease-out;
+}
+.footer__lists a:hover {
+  opacity: 1;
+}
+.footer__contacts a {
+  display: inline-block;
+}
+.footer__contacts img {
+  margin-bottom: 29px;
+}
+.footer__phone {
+  margin-bottom: 26px;
+  text-align: right;
+}
+.footer__phone a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 26px;
+}
+.footer__phone p {
+  margin-top: 6px;
+  font-size: 15px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+.footer__mail {
+  text-align: right;
+}
+.footer__mail a {
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.9;
+}
+.footer hr {
   margin: 0;
   margin-bottom: 40px;
   opacity: 0.2;
