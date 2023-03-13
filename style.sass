@@ -236,10 +236,17 @@ h2
     background-color: #464C55
     padding-top: 50px
     padding-bottom: 36px
+    &__top
+        hr
+            margin: 0
+            margin-bottom: 40px
+            opacity: 0.2
+            height: 1px
     &__bottom
         .wrapper
             display: flex
             justify-content: space-between
+            align-items: center
     &__logo
         margin-right: 28.39px
         font-weight: 800
@@ -249,3 +256,36 @@ h2
     &__copyright
         color: #FFFFFF
         opacity: 0.7
+    &__other
+        max-width: 443px
+        width: 100%
+        ul
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+        a
+            color: #FFFFFF
+            opacity: 0.7
+            transition: all 0.3s ease-out
+            &:hover
+                opacity: 1
+    &__social
+        display: flex
+        height: 32px
+        a
+            width: 32px
+            height: 32px
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-right: 6px
+            background-color: #666c75
+            border-radius: 4px
+            &:last-child
+                margin-right: 0
+            &:hover
+                img
+                    filter: invert(99%) sepia(99%) saturate(0%) hue-rotate(62deg) brightness(106%) contrast(100%)
+            img
+                transition: all 0.5s ease-out
+                filter: invert(76%) sepia(5%) saturate(167%) hue-rotate(182deg) brightness(95%) contrast(97%)

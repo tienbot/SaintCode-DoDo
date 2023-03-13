@@ -283,9 +283,16 @@ h2 {
   padding-top: 50px;
   padding-bottom: 36px;
 }
+.footer__top hr {
+  margin: 0;
+  margin-bottom: 40px;
+  opacity: 0.2;
+  height: 1px;
+}
 .footer__bottom .wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .footer__logo {
   margin-right: 28.39px;
@@ -297,6 +304,47 @@ h2 {
 .footer__copyright {
   color: #FFFFFF;
   opacity: 0.7;
+}
+.footer__other {
+  max-width: 443px;
+  width: 100%;
+}
+.footer__other ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer__other a {
+  color: #FFFFFF;
+  opacity: 0.7;
+  transition: all 0.3s ease-out;
+}
+.footer__other a:hover {
+  opacity: 1;
+}
+.footer__social {
+  display: flex;
+  height: 32px;
+}
+.footer__social a {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
+  background-color: #666c75;
+  border-radius: 4px;
+}
+.footer__social a:last-child {
+  margin-right: 0;
+}
+.footer__social a:hover img {
+  filter: invert(99%) sepia(99%) saturate(0%) hue-rotate(62deg) brightness(106%) contrast(100%);
+}
+.footer__social a img {
+  transition: all 0.5s ease-out;
+  filter: invert(76%) sepia(5%) saturate(167%) hue-rotate(182deg) brightness(95%) contrast(97%);
 }
 
 /*# sourceMappingURL=style.css.map */
