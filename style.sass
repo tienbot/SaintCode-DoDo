@@ -388,7 +388,24 @@ h2
             display: none
     
     .menu
+        overflow: hidden
         order: 3
+        .content
+            width: max-content
+            .active
+                background-color: #FFF0E6
+                a
+                    color: #D15700
+        &__nav
+            max-width: max-content
+            li
+                background: #F3F3F7
+                padding: 6px 15px
+                border-radius: 100px
+                margin-right: 8px
+                a
+                    font-weight: 600
+                    color: #464C55
         &__basket
             display: none
 

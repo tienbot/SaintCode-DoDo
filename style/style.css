@@ -461,7 +461,30 @@ h2 {
     display: none;
   }
   .menu {
+    overflow: hidden;
     order: 3;
+  }
+  .menu .content {
+    width: max-content;
+  }
+  .menu .content .active {
+    background-color: #FFF0E6;
+  }
+  .menu .content .active a {
+    color: #D15700;
+  }
+  .menu__nav {
+    max-width: max-content;
+  }
+  .menu__nav li {
+    background: #F3F3F7;
+    padding: 6px 15px;
+    border-radius: 100px;
+    margin-right: 8px;
+  }
+  .menu__nav li a {
+    font-weight: 600;
+    color: #464C55;
   }
   .menu__basket {
     display: none;
