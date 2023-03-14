@@ -383,6 +383,7 @@ h2
 @media (max-width: 576px)
     .header
         margin-top: 12px
+        order: -2
         &__phone
             display: none
     .logo
@@ -391,7 +392,8 @@ h2
     
     .menu
         overflow: hidden
-        order: 3
+        order: -1
+        margin-bottom: 20px
         .content
             width: max-content
             .active
@@ -408,6 +410,7 @@ h2
                 a
                     font-weight: 600
                     color: #464C55
+                    line-height: 19px
         &__basket
             display: none
 
@@ -416,6 +419,7 @@ h2
         justify-content: flex-start
         margin-left: 16px
         margin-bottom: 20px
+        order: -2
         img
             padding: 0
             margin-left: 0
@@ -428,6 +432,7 @@ h2
             display: block   
     
     .new
+        order: -2
         .content
             margin-bottom: 30px
         h2
@@ -438,11 +443,15 @@ h2
             margin-right: 10px
     
     .product
+        padding-top: 0
+        margin-bottom: 30px
         .content
             grid-template-columns: 1fr
             row-gap: 0
         h2
             margin-bottom: 20px
+        &:last-of-type
+            padding-bottom: 40px
     
     .card
         max-width: 576px
@@ -466,7 +475,6 @@ h2
             margin-right: 0
             margin-bottom: 8px
             min-height: unset
-        // &__price
         button
             display: none
         &__bottom

@@ -464,6 +464,7 @@ h2 {
 @media (max-width: 576px) {
   .header {
     margin-top: 12px;
+    order: -2;
   }
   .header__phone {
     display: none;
@@ -473,7 +474,8 @@ h2 {
   }
   .menu {
     overflow: hidden;
-    order: 3;
+    order: -1;
+    margin-bottom: 20px;
   }
   .menu .content {
     width: max-content;
@@ -496,6 +498,7 @@ h2 {
   .menu__nav li a {
     font-weight: 600;
     color: #464C55;
+    line-height: 19px;
   }
   .menu__basket {
     display: none;
@@ -505,6 +508,7 @@ h2 {
     justify-content: flex-start;
     margin-left: 16px;
     margin-bottom: 20px;
+    order: -2;
   }
   .slider img {
     padding: 0;
@@ -520,6 +524,9 @@ h2 {
   .slider .mobile {
     display: block;
   }
+  .new {
+    order: -2;
+  }
   .new .content {
     margin-bottom: 30px;
   }
@@ -531,12 +538,19 @@ h2 {
     height: 108px;
     margin-right: 10px;
   }
+  .product {
+    padding-top: 0;
+    margin-bottom: 30px;
+  }
   .product .content {
     grid-template-columns: 1fr;
     row-gap: 0;
   }
   .product h2 {
     margin-bottom: 20px;
+  }
+  .product:last-of-type {
+    padding-bottom: 40px;
   }
   .card {
     max-width: 576px;
