@@ -143,15 +143,17 @@ h2 {
   position: sticky;
   top: 0;
   z-index: 100;
-  margin: 0 auto;
   padding: 9px 0;
+  background-color: #fff;
+}
+.menu .content {
   max-width: 1060px;
   width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
 }
 .menu__nav {
   max-width: 467px;
@@ -286,6 +288,7 @@ h2 {
 .footer__top {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 93px;
 }
 .footer__lists {
   display: grid;
@@ -313,8 +316,6 @@ h2 {
 }
 .footer__contacts a {
   display: inline-block;
-}
-.footer__contacts img {
   margin-bottom: 29px;
 }
 .footer__phone {
@@ -326,6 +327,7 @@ h2 {
   font-weight: 600;
   font-size: 26px;
   line-height: 26px;
+  margin-bottom: 6px;
 }
 .footer__phone p {
   margin-top: 6px;
@@ -347,6 +349,30 @@ h2 {
   margin-bottom: 40px;
   opacity: 0.2;
   height: 1px;
+}
+.footer__middle {
+  margin-bottom: 40px;
+  max-width: 696px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__middle .statistic {
+  max-width: 299px;
+  width: 100%;
+}
+.footer__middle .statistic__title {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 26px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.footer__middle .statistic__descr {
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  opacity: 0.7;
 }
 .footer__bottom .wrapper {
   display: flex;

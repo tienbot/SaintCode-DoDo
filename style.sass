@@ -3,9 +3,6 @@
     font-weight: 400
     scroll-behavior: smooth
 
-// body
-//     padding-bottom: 84px
-
 .container
     max-width: 1092px
     width: 100%
@@ -121,15 +118,16 @@ h2
     position: sticky
     top: 0
     z-index: 100
-    margin: 0 auto
     padding: 9px 0
-    max-width: 1060px
-    width: 100%
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between
-    align-items: center
     background-color: #fff
+    .content
+        max-width: 1060px
+        width: 100%
+        margin: 0 auto
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
     &__nav
         max-width: 467px
         width: 100%
@@ -239,6 +237,7 @@ h2
     &__top
         display: flex
         justify-content: space-between
+        margin-bottom: 93px
     &__lists
         display: grid
         grid-template-columns: repeat(4, 1fr)
@@ -261,7 +260,6 @@ h2
     &__contacts
         a
             display: inline-block
-        img
             margin-bottom: 29px
     &__phone
         margin-bottom: 26px
@@ -271,6 +269,7 @@ h2
             font-weight: 600
             font-size: 26px
             line-height: 26px
+            margin-bottom: 6px
         p
             margin-top: 6px
             font-size: 15px
@@ -288,6 +287,26 @@ h2
         margin-bottom: 40px
         opacity: 0.2
         height: 1px
+    &__middle
+        margin-bottom: 40px
+        max-width: 696px
+        width: 100%
+        display: flex
+        justify-content: space-between
+        .statistic
+            max-width: 299px
+            width: 100%
+            &__title
+                font-weight: 600
+                font-size: 26px
+                line-height: 26px
+                color: #fff
+                margin-bottom: 12px
+            &__descr
+                font-size: 16px
+                line-height: 22px
+                color: #FFFFFF
+                opacity: 0.7
     &__bottom
         .wrapper
             display: flex
