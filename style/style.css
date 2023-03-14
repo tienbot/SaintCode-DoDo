@@ -286,6 +286,7 @@ h2 {
 .product .content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
   column-gap: 20px;
   row-gap: 60px;
 }
@@ -450,14 +451,24 @@ h2 {
     max-width: 1092px;
   }
 }
+@media (max-width: 992px) {
+  .product .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .product .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (max-width: 576px) {
   .header {
     margin-top: 12px;
   }
-  .logo p {
+  .header__phone {
     display: none;
   }
-  .header__phone {
+  .logo p {
     display: none;
   }
   .menu {
@@ -519,6 +530,56 @@ h2 {
     width: 240px;
     height: 108px;
     margin-right: 10px;
+  }
+  .product .content {
+    grid-template-columns: 1fr;
+    row-gap: 0;
+  }
+  .product h2 {
+    margin-bottom: 20px;
+  }
+  .card {
+    max-width: 576px;
+    padding: 16px 0;
+    flex-direction: row;
+    align-items: center;
+    min-height: auto;
+  }
+  .card img {
+    margin: 0;
+    margin-right: 7px;
+    position: unset;
+    width: 115px;
+  }
+  .card__name {
+    margin-top: 0;
+    margin-bottom: 4px;
+    line-height: 20px;
+    font-size: 18px;
+  }
+  .card__descr {
+    font-size: 12px;
+    line-height: 16px;
+    margin-right: 0;
+    margin-bottom: 8px;
+    min-height: unset;
+  }
+  .card button {
+    display: none;
+  }
+  .card__bottom .button {
+    width: 96px;
+  }
+  .button {
+    font-size: 14px;
+    height: 32px;
+    padding: 6px 20px;
+  }
+  #pizza h2 {
+    display: none;
+  }
+  #pizza .product {
+    margin-top: 0;
   }
 }
 
