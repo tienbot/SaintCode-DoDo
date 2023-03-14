@@ -4,6 +4,10 @@
   scroll-behavior: smooth;
 }
 
+.d-none {
+  display: none !important;
+}
+
 .container {
   max-width: 1092px;
   width: 100%;
@@ -19,6 +23,7 @@ h2 {
 
 .logo {
   display: flex;
+  align-items: center;
 }
 .logo img {
   margin-right: 14.67px;
@@ -26,9 +31,9 @@ h2 {
 .logo h1 {
   font-weight: 800;
   font-size: 25px;
-  margin-bottom: 9px;
 }
 .logo p {
+  margin-top: 9px;
   font-size: 12px;
 }
 
@@ -115,6 +120,11 @@ h2 {
   cursor: pointer;
 }
 
+.order {
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   margin-top: 25px;
 }
@@ -143,7 +153,7 @@ h2 {
   position: sticky;
   top: 0;
   z-index: 100;
-  padding: 9px 0;
+  padding: 9px 16px;
   background-color: #fff;
 }
 .menu .content {
@@ -191,7 +201,7 @@ h2 {
   max-width: 1090px;
   width: 100%;
   opacity: 0.2;
-  margin: 0 15px;
+  padding: 0 16px;
   border-radius: 15px;
 }
 .slider img:hover {
@@ -199,6 +209,9 @@ h2 {
 }
 .slider .active {
   opacity: 1;
+}
+.slider .mobile {
+  display: none;
 }
 .slider__dotts {
   position: absolute;
@@ -430,6 +443,60 @@ h2 {
 .footer__social a img {
   transition: all 0.5s ease-out;
   filter: invert(76%) sepia(5%) saturate(167%) hue-rotate(182deg) brightness(95%) contrast(97%);
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1092px;
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    margin-top: 12px;
+  }
+  .logo p {
+    display: none;
+  }
+  .header__phone {
+    display: none;
+  }
+  .menu {
+    order: 3;
+  }
+  .menu__basket {
+    display: none;
+  }
+  .slider {
+    margin-top: 0;
+    justify-content: flex-start;
+    margin-left: 16px;
+    margin-bottom: 20px;
+  }
+  .slider img {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  .slider__dotts {
+    display: none;
+  }
+  .slider .desktop {
+    display: none;
+  }
+  .slider .mobile {
+    display: block;
+  }
+  .new .content {
+    margin-bottom: 30px;
+  }
+  .new h2 {
+    margin-bottom: 10px;
+  }
+  .new__card {
+    width: 240px;
+    height: 108px;
+    margin-right: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -13,85 +13,89 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__content">
-                <div class="header__logo logo">
-                    <img src="./icons/logo.svg" alt="логотип">
-                    <div class="logo__text">
-                        <h1>ДОДО ПИЦЦА</h1>
-                        <p>Сеть пиццерий  №1 в России</p>
+    <div class="order">
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <div class="header__logo logo">
+                        <img src="./icons/logo.svg" alt="логотип">
+                        <div class="logo__text">
+                            <h1>ДОДО ПИЦЦА</h1>
+                            <p>Сеть пиццерий  №1 в России</p>
+                        </div>
+                    </div>
+                    <div class="header__phone">
+                        <a href="tel:+88003020060">8 800 302-00-60</a>
+                        <p>Звонок бесплатный</p>
                     </div>
                 </div>
-                <div class="header__phone">
-                    <a href="tel:+88003020060">8 800 302-00-60</a>
-                    <p>Звонок бесплатный</p>
-                </div>
             </div>
-        </div>
-    </header>
-    <section class="menu">
-        <div class="content">
-            <nav class="menu__nav">
-                <ul>
-                    <li><a href="#pizza">Пицца</a></li>
-                    <li><a href="#combo">Комбо</a></li>
-                    <li><a href="#snacks">Закуски</a></li>
-                    <li><a href="#deserts">Десерты</a></li>
-                    <li><a href="#drinks">Напити</a></li>
-                    <li><a href="#other">Другие товары</a></li>
-                </ul>
-            </nav>
-            <a href="#" class="button button--orange menu__basket">Корзина</a>
-        </div>
-
-    </section>
-    <section class="slider">
-        <img src="./img/slider/3.jpg" alt="Пицца 'Сырный бум' из трех сыров: моцарелла, чеддер, пармезан">
-        <img src="./img/slider/1.jpg" alt="Пицца и закуски без мяса" class="active">
-        <img src="./img/slider/2.jpg" alt="Додо и Союзмультфильм. Розыгрыш призов">
-        <div class="slider__dotts">
-            <button class="dot"></button>
-            <button class="dot"></button>
-            <button class="dot"></button>
-        </div>
-    </section>
-    <section class="new">
-        <div class="container">
-            <h2>Новое и популярное</h2>
+        </header>
+        <section class="menu">
             <div class="content">
-                <div class="new__card">
-                    <img src="./img/pizza/cezar/cezar-traditional-big.jpeg" alt="Пицца Цезарь">
-                    <div class="new__text">
-                        <div class="new__name">Цезарь</div>
-                        <div class="new__price">от 445 ₽</div>
+                <nav class="menu__nav">
+                    <ul>
+                        <li><a href="#pizza">Пицца</a></li>
+                        <li><a href="#combo">Комбо</a></li>
+                        <li><a href="#snacks">Закуски</a></li>
+                        <li><a href="#deserts">Десерты</a></li>
+                        <li><a href="#drinks">Напити</a></li>
+                        <li><a href="#other">Другие товары</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="button button--orange menu__basket">Корзина</a>
+            </div>
+    
+        </section>
+        <section class="slider">
+            <img src="./img/slider/3.jpg" alt="Пицца 'Сырный бум' из трех сыров: моцарелла, чеддер, пармезан" class="desktop">
+            <img src="./img/slider/1.jpg" alt="Пицца и закуски без мяса" class="active desktop">
+            <img src="./img/slider/1_mobile.jpg" alt="Пицца и закуски без мяса" class="active mobile">
+            <img src="./img/slider/2.jpg" alt="Додо и Союзмультфильм. Розыгрыш призов" class="desktop">
+            <img src="./img/slider/2_mobile.jpg" alt="Комбо Вместе вкуснее" class="mobile">
+            <div class="slider__dotts">
+                <button class="dot"></button>
+                <button class="dot"></button>
+                <button class="dot"></button>
+            </div>
+        </section>
+        <section class="new">
+            <div class="container">
+                <h2>Новое и популярное</h2>
+                <div class="content">
+                    <div class="new__card">
+                        <img src="./img/pizza/cezar/cezar-traditional-big.jpeg" alt="Пицца Цезарь">
+                        <div class="new__text">
+                            <div class="new__name">Цезарь</div>
+                            <div class="new__price">от 445 ₽</div>
+                        </div>
                     </div>
-                </div>
-                <div class="new__card">
-                    <img src="./img/pizza/tender-salmon/tender-salomon-traditional-small.jpeg" alt="Нежный лосось">
-                    <div class="new__text">
-                        <div class="new__name">Нежный лосось</div>
-                        <div class="new__price">от 495 ₽</div>
+                    <div class="new__card">
+                        <img src="./img/pizza/tender-salmon/tender-salomon-traditional-small.jpeg" alt="Нежный лосось">
+                        <div class="new__text">
+                            <div class="new__name">Нежный лосось</div>
+                            <div class="new__price">от 495 ₽</div>
+                        </div>
                     </div>
-                </div>
-                <div class="new__card">
-                    <img src="./img/combo/combo_2.jpg" alt="2 пиццы">
-                    <div class="new__text">
-                        <div class="new__name">2 пиццы</div>
-                        <div class="new__price">899 ₽</div>
+                    <div class="new__card">
+                        <img src="./img/combo/combo_2.jpg" alt="2 пиццы">
+                        <div class="new__text">
+                            <div class="new__name">2 пиццы</div>
+                            <div class="new__price">899 ₽</div>
+                        </div>
                     </div>
-                </div>
-                <div class="new__card">
-                    <img src="./img/pizza/carbonara/carbonara-traditional-small.jpeg" alt="Пицца Карбонара">
-                    <div class="new__text">
-                        <div class="new__name">Карбонара</div>
-                        <div class="new__price">от 395 ₽</div>
+                    <div class="new__card">
+                        <img src="./img/pizza/carbonara/carbonara-traditional-small.jpeg" alt="Пицца Карбонара">
+                        <div class="new__text">
+                            <div class="new__name">Карбонара</div>
+                            <div class="new__price">от 395 ₽</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="product" id="pizza">
+        </section>
+    </div>
+    <section class="product d-none" id="pizza">
         <div class="container">
             <h2>Пицца</h2>
             <div class="content">
@@ -170,7 +174,7 @@
             </div>
         </div>
     </section>
-    <section class="product" id="combo">
+    <section class="product d-none" id="combo">
         <div class="container">
             <h2>Комбо</h2>
             <div class="content">
@@ -222,7 +226,7 @@
             </div>
         </div>
     </section>
-    <section class="product" id="snacks">
+    <section class="product d-none" id="snacks">
         <div class="container">
             <h2>Закуски</h2>
             <div class="content">
@@ -274,7 +278,7 @@
             </div>
         </div>
     </section>
-    <section class="product" id="deserts">
+    <section class="product d-none" id="deserts">
         <div class="container">
             <h2>Десерты</h2>
             <div class="content">
@@ -326,7 +330,7 @@
             </div>
         </div>
     </section>
-    <section class="product" id="drinks">
+    <section class="product d-none" id="drinks">
         <div class="container">
             <h2>Напитки</h2>
             <div class="content">
@@ -378,7 +382,7 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer d-none">
         <div class="container">
             <div class="footer__top">
                 <div class="footer__lists">
