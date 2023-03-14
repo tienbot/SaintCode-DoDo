@@ -63,8 +63,7 @@ h2
     img
         top: 0
         position: absolute
-        margin: 0 15px
-        margin-bottom: 5px
+        margin: 0 15px 5px 15px
         transition: all 0.3s ease-out
         &:hover
             top: 3px
@@ -257,6 +256,7 @@ h2
         color: #fff
         p
             margin-bottom: 10px
+            font-weight: 600
         li
             margin-bottom: 10px
             max-width: 130px
@@ -365,6 +365,8 @@ h2
             img
                 transition: all 0.5s ease-out
                 filter: invert(76%) sepia(5%) saturate(167%) hue-rotate(182deg) brightness(95%) contrast(97%)
+    .mobile
+        display: none
 
 @media (max-width: 1200px)
     .container
@@ -491,8 +493,55 @@ h2
             display: none
         .product
             margin-top: 0
-
-// @media (max-width: 320px)
-    // .product
-    //     .content
-    //         grid-template-columns: 1fr
+    
+    .footer
+        padding: 20px 0
+        &__top
+            flex-direction: column
+            margin-bottom: 0
+        &__lists
+            grid-template-columns: 1fr
+            font-weight: 600
+            p
+                margin-bottom: 12px
+                line-height: 24px
+            a
+                line-height: 24px
+        &__list
+            margin-bottom: 10px
+            li
+                max-width: fit-content
+        &__phone
+            display: none
+        &__contacts
+            display: flex
+            flex-direction: column-reverse
+            a
+                margin-bottom: 20px
+        &__mail
+            text-align: left
+            a
+                font-size: 16px
+        hr
+            margin-bottom: 20px
+            display: none
+            opacity: 0.1
+            width: 100%
+        &__middle
+            display: none
+        &__bottom
+            .wrapper
+                align-items: flex-start
+                flex-direction: column-reverse
+        &__other
+            ul
+                flex-direction: column
+                margin-bottom: 20px
+            li
+                margin-bottom: 10px
+                a
+                    line-height: 22px
+        &__social
+            margin-bottom: 20px
+        .mobile
+            display: block

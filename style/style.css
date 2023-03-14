@@ -76,8 +76,7 @@ h2 {
 .card img {
   top: 0;
   position: absolute;
-  margin: 0 15px;
-  margin-bottom: 5px;
+  margin: 0 15px 5px 15px;
   transition: all 0.3s ease-out;
 }
 .card img:hover {
@@ -313,6 +312,7 @@ h2 {
 }
 .footer__lists p {
   margin-bottom: 10px;
+  font-weight: 600;
 }
 .footer__lists li {
   margin-bottom: 10px;
@@ -444,6 +444,9 @@ h2 {
 .footer__social a img {
   transition: all 0.5s ease-out;
   filter: invert(76%) sepia(5%) saturate(167%) hue-rotate(182deg) brightness(95%) contrast(97%);
+}
+.footer .mobile {
+  display: none;
 }
 
 @media (max-width: 1200px) {
@@ -594,6 +597,75 @@ h2 {
   }
   #pizza .product {
     margin-top: 0;
+  }
+  .footer {
+    padding: 20px 0;
+  }
+  .footer__top {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .footer__lists {
+    grid-template-columns: 1fr;
+    font-weight: 600;
+  }
+  .footer__lists p {
+    margin-bottom: 12px;
+    line-height: 24px;
+  }
+  .footer__lists a {
+    line-height: 24px;
+  }
+  .footer__list {
+    margin-bottom: 10px;
+  }
+  .footer__list li {
+    max-width: fit-content;
+  }
+  .footer__phone {
+    display: none;
+  }
+  .footer__contacts {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .footer__contacts a {
+    margin-bottom: 20px;
+  }
+  .footer__mail {
+    text-align: left;
+  }
+  .footer__mail a {
+    font-size: 16px;
+  }
+  .footer hr {
+    margin-bottom: 20px;
+    display: none;
+    opacity: 0.1;
+    width: 100%;
+  }
+  .footer__middle {
+    display: none;
+  }
+  .footer__bottom .wrapper {
+    align-items: flex-start;
+    flex-direction: column-reverse;
+  }
+  .footer__other ul {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .footer__other li {
+    margin-bottom: 10px;
+  }
+  .footer__other li a {
+    line-height: 22px;
+  }
+  .footer__social {
+    margin-bottom: 20px;
+  }
+  .footer .mobile {
+    display: block;
   }
 }
 
