@@ -246,14 +246,16 @@ h2
     padding-bottom: 36px
     &__top
         display: flex
+        flex-wrap: wrap
         justify-content: space-between
-        margin-bottom: 93px
+        margin-bottom: 73px
     &__lists
         display: grid
         grid-template-columns: repeat(4, 1fr)
         max-width: 666px
         width: 100%
         color: #fff
+        margin-bottom: 20px
         p
             margin-bottom: 10px
             font-weight: 600
@@ -271,7 +273,10 @@ h2
     &__contacts
         a
             display: inline-block
-            margin-bottom: 29px
+            margin-bottom: 10px
+    &__apps
+        text-align: right
+        margin-bottom: 19px
     &__phone
         margin-bottom: 26px
         text-align: right
@@ -376,11 +381,30 @@ h2
     .product
         .content
             grid-template-columns: repeat(3, 1fr)
+    .footer
+        &__top
+            justify-content: center
+        &__phone
+            text-align: center
+        &__mail
+            text-align: center
+        &__other
+            width: auto
+            ul
+                flex-direction: column
+                margin-bottom: 20px
+            li
+                margin-bottom: 10px
+                a
+                    line-height: 22px
 
 @media (max-width: 768px)
     .product
         .content
             grid-template-columns: repeat(2, 1fr)
+    .footer
+        &__top
+            margin-bottom: 20px
 
 @media (max-width: 576px)
     .header
@@ -500,6 +524,7 @@ h2
             flex-direction: column
             margin-bottom: 0
         &__lists
+            margin-bottom: 0
             grid-template-columns: 1fr
             font-weight: 600
             p
@@ -518,6 +543,9 @@ h2
             flex-direction: column-reverse
             a
                 margin-bottom: 20px
+        &__apps
+            text-align: left
+            margin-bottom: 0
         &__mail
             text-align: left
             a
@@ -533,14 +561,14 @@ h2
             .wrapper
                 align-items: flex-start
                 flex-direction: column-reverse
-        &__other
-            ul
-                flex-direction: column
-                margin-bottom: 20px
-            li
-                margin-bottom: 10px
-                a
-                    line-height: 22px
+        // &__other
+        //     ul
+        //         flex-direction: column
+        //         margin-bottom: 20px
+        //     li
+        //         margin-bottom: 10px
+        //         a
+        //             line-height: 22px
         &__social
             margin-bottom: 20px
         .mobile
