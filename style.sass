@@ -3,6 +3,9 @@
     font-weight: 400
     scroll-behavior: smooth
 
+// html
+//     overflow: hidden
+
 .d-none
     display: none !important
 
@@ -377,23 +380,31 @@ h2
 .modal
     position: absolute
     z-index: 100
-    border-radius: 20px
+    
     left: 50%
-    top: 1vh
-    transform: translateX(-50%) translateY(50%)
+    top: 10vh
+    transform: translateX(-50%)
     max-width: 920px
     width: 100%
     height: 610px
-    background-color: #FFFFFF
-    overflow: hidden
+    
     box-shadow: 0px 6px 55px rgba(0, 0, 0, 0.1)
+    
+    &__back
+        background-color: #3c3c3c
+        position: fixed
+        inset: 0
+        z-index: 100
+        overflow: hidden
     &__content
+        background-color: #FFFFFF
         display: flex
         margin: 0 auto
         height: 100%
+        overflow: hidden
+        border-radius: 20px
     &__img
         position: relative
-        // max-width: 540px
         width: 100%
         margin-top: 10px
         margin-left: 18px
@@ -414,12 +425,12 @@ h2
             width: 372px
         .small
             width: 300px
-
     &__settings
         max-width: 380px
         width: 100%
         padding: 30px
         background: #FCFCFC
+        overflow: auto
         h2
             font-weight: 600
             line-height: 33px
@@ -429,6 +440,19 @@ h2
             font-size: 14px
             line-height: 19px
             color: #73798C
+            margin-bottom: 11px
+    &__close
+        border: none
+        background-color: transparent
+        position: absolute
+        top: 20px
+        right: -40px
+        padding: 0
+        img
+            width: 24px
+        &:hover
+            cursor: pointer
+
 
 @media (max-width: 992px)
     .product
