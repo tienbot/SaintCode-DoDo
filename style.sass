@@ -387,7 +387,6 @@ h2
     width: 100%
     height: 610px
     box-shadow: 0px 6px 55px rgba(0, 0, 0, 0.1)
-    
     &__back
         background-color: rgba(90, 90, 90, 0.92)
         position: fixed
@@ -427,18 +426,22 @@ h2
         max-width: 380px
         width: 100%
         padding: 30px
+        padding-bottom: 40px
+        margin-bottom: 50px
         background: #FCFCFC
         overflow: auto
-        h2
-            font-weight: 600
-            line-height: 33px
-            margin-bottom: 3px
-        p
-            font-weight: 400
-            font-size: 14px
-            line-height: 19px
-            color: #73798C
-            margin-bottom: 11px
+        &__wrapper
+            background: #FCFCFC
+    &__title
+        font-weight: 600
+        line-height: 33px
+        margin-bottom: 3px
+    &__descr
+        font-weight: 400
+        font-size: 14px
+        line-height: 19px
+        color: #73798C
+        margin-bottom: 11px
     &__close
         border: none
         background-color: transparent
@@ -452,6 +455,7 @@ h2
             cursor: pointer
 
     .form
+        position: relative
         &__tags
             margin-bottom: 20px    
         &__tag
@@ -484,7 +488,6 @@ h2
                     background: #FFFFFF
                     box-shadow: 0px 3px 15px rgba(6, 5, 50, 0.05)
                     border-radius: 100px
-                    line-height: 16px
             span
                 font-size: 12px
                 opacity: 0.7
@@ -493,6 +496,53 @@ h2
             font-weight: 600
             font-size: 16px
             margin-bottom: 11px
+        &__dops
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            gap: 10px
+        &__button
+            position: fixed
+            bottom: 30px
+            width: 100%
+            button
+                max-width: 320px
+                width: 100%
+
+.dop
+    margin-top: 3px
+    position: relative
+    overflow: hidden
+    width: 100px
+    height: 150px
+    background: #FFFFFF
+    box-shadow: 0px 4px 20px rgba(6, 5, 50, 0.05)
+    border-radius: 12px
+    &__text
+        position: absolute
+        text-align: center
+        left: 50%
+        transform: translateX(-50%)
+    &__name
+        font-size: 12px
+        line-height: 16px
+        color: #000
+        width: 81px
+        margin-bottom: 4px
+        min-height: 32px
+    &__price
+        font-weight: 600
+        font-size: 14px
+        line-height: 19px
+        color: #000
+    input
+        display: none
+    &__check
+        border: 1px solid #F96900
+        &__icon
+            // opacity: 0
+            position: absolute
+            top: 10px
+            right: 10px
 
 
 @media (max-width: 992px)

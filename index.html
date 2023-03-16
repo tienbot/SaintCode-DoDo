@@ -438,7 +438,7 @@
         </section>
         
     </div>
-    <div class="modal__back d-none">
+    <div class="modal__back">
         <div class="modal">
             <div class="modal__content">
                 <div class="modal__img">
@@ -453,83 +453,139 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal__settings">
-                    <h2>Чиззи чеддер</h2>
-                    <p>30 см, традиционное тесто, 480 г</p>
-                    <form action="" class="form">
-                        <div class="form__tags">
-                            <div class="form__tag">
-                                <label for="ham">Ветчина</label>
-                                <input type="checkbox" name="1" id="ham">
+                    <div class="modal__settings">
+                        <h2 class="modal__title">Чиззи чеддер</h2>
+                        <p class="modal__descr">30 см, традиционное тесто, 480 г</p>
+                        <form action="" class="form">
+                            <div class="form__tags">
+                                <div class="form__tag">
+                                    <label for="ham">Ветчина</label>
+                                    <input type="checkbox" name="1" id="ham">
+                                </div>
+                                <div class="form__tag tag__permament">
+                                    <label for="chedder">сыр чеддер</label>
+                                    <input type="checkbox" name="1" id="chedder" checked onclick="return false;">
+                                </div>
+                                <div class="form__tag">
+                                    <label for="papper">сладкий перец</label>
+                                    <input type="checkbox" name="1" id="papper">
+                                </div>
+                                <div class="form__tag tag__permament">
+                                    <label for="mozzarella">моцарелла</label>
+                                    <input type="checkbox" name="1" id="mozzarella" checked onclick="return false;">
+                                </div>
+                                <div class="form__tag tag__permament">
+                                    <label for="tomato__sauce">томатный соус</label>
+                                    <input type="checkbox" name="1" id="tomato__sauce" checked onclick="return false;">
+                                </div>
+                                <div class="form__tag">
+                                    <label for="garlick">чеснок</label>
+                                    <input type="checkbox" name="1" id="garlick">
+                                </div>
+                                <div class="form__tag">
+                                    <label for="italian__herbs">итальянские травы</label>
+                                    <input type="checkbox" name="1" id="italian__herbs">
+                                </div>
                             </div>
-                            <div class="form__tag tag__permament">
-                                <label for="chedder">сыр чеддер</label>
-                                <input type="checkbox" name="1" id="chedder" checked onclick="return false;">
-                            </div>
-                            <div class="form__tag">
-                                <label for="papper">сладкий перец</label>
-                                <input type="checkbox" name="1" id="papper">
-                            </div>
-                            <div class="form__tag tag__permament">
-                                <label for="mozzarella">моцарелла</label>
-                                <input type="checkbox" name="1" id="mozzarella" checked onclick="return false;">
-                            </div>
-                            <div class="form__tag tag__permament">
-                                <label for="tomato__sauce">томатный соус</label>
-                                <input type="checkbox" name="1" id="tomato__sauce" checked onclick="return false;">
-                            </div>
-                            <div class="form__tag">
-                                <label for="garlick">чеснок</label>
-                                <input type="checkbox" name="1" id="garlick">
-                            </div>
-                            <div class="form__tag">
-                                <label for="italian__herbs">итальянские травы</label>
-                                <input type="checkbox" name="1" id="italian__herbs">
-                            </div>
-                        </div>
-                        <div class="form__size form__radios">
-                            <div class="form__radio">
-                                <label for="form__small">
-                                    <input type="radio" id="form__small" name="drone" value="form__small" checked>
-                                    <span>Маленькая</span>
-                                </label>
-                            </div>
-                        
-                            <div class="form__radio">
-                                <label for="form__middle">
-                                    <input type="radio" id="form__middle" name="drone" value="form__middle">
-                                    <span>Средняя</span>
-                                </label>
-                            </div>
-                        
-                            <div class="form__radio">
-                                <label for="form__big">
-                                    <input type="radio" id="form__big" name="drone" value="form__big">
-                                    <span>Большая</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="form__dough form__radios">
-                            <div class="form__radio">
-                                <label for="form__traditional">
-                                    <input type="radio" id="form__traditional" name="drone" value="form__traditional" checked>
-                                    <span>Традиционное</span>
-                                </label>
-                            </div>
-                        
-                            <div class="form__radio">
-                                <label for="form__thin">
-                                    <input type="radio" id="form__thin" name="drone" value="form__thin">
-                                    <span>Тонкое</span>
-                                </label>
-                            </div>
-                        </div>
-                        <h3>Добавить в пиццу</h3>
-                        <div class="form__dop">
+                            <div class="form__size form__radios">
+                                <div class="form__radio">
+                                    <label for="form__small">
+                                        <input type="radio" id="form__small" name="size" value="form__small">
+                                        <span>Маленькая</span>
+                                    </label>
+                                </div>
                             
-                        </div>
-                    </form>
-                </div>
+                                <div class="form__radio">
+                                    <label for="form__middle">
+                                        <input type="radio" id="form__middle" name="size" value="form__middle" checked>
+                                        <span>Средняя</span>
+                                    </label>
+                                </div>
+                            
+                                <div class="form__radio">
+                                    <label for="form__big">
+                                        <input type="radio" id="form__big" name="size" value="form__big">
+                                        <span>Большая</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__dough form__radios">
+                                <div class="form__radio">
+                                    <label for="form__traditional">
+                                        <input type="radio" id="form__traditional" name="dough" value="form__traditional" checked>
+                                        <span>Традиционное</span>
+                                    </label>
+                                </div>
+                            
+                                <div class="form__radio">
+                                    <label for="form__thin">
+                                        <input type="radio" id="form__thin" name="dough" value="form__thin">
+                                        <span>Тонкое</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <h3>Добавить в пиццу</h3>
+                            <div class="form__dops ">
+                                <label class="form__dop qwer dop">
+                                    <img src="./img/filling/cheese_border.jpg" alt="сырный бортик">
+                                    <div class="dop__text">
+                                        <p class="dop__name">Cырный бортик</p>
+                                        <p class="dop__price">599 ₽</p>
+                                    </div>
+                                    <input class="dop__input" type="checkbox">
+                                    <img src="./icons/dop__check.svg" alt="check" class="dop__check__icon d-none">
+                                </label>
+                                <label class="form__dop dop">
+                                    <img src="./img/filling/champignon.jpg" alt="шампиньоны">
+                                    <div class="dop__text">
+                                        <p class="dop__name">Шампиньоны</p>
+                                        <p class="dop__price">39 ₽</p>
+                                    </div>
+                                    <input class="dop__input" type="checkbox">
+                                    <img src="./icons/dop__check.svg" alt="check" class="dop__check__icon d-none">
+                                </label>
+                                <label class="form__dop dop">
+                                    <img src="./img/filling/chiсken.jpg" alt="цыпленок">
+                                    <div class="dop__text">
+                                        <p class="dop__name">Цыпленок</p>
+                                        <p class="dop__price">59 ₽</p>
+                                    </div>
+                                    <input class="dop__input" type="checkbox">
+                                    <img src="./icons/dop__check.svg" alt="check" class="dop__check__icon d-none">
+                                </label>
+                                <label class="form__dop dop">
+                                    <img src="./img/filling/cheese.jpg" alt="моцарелла">
+                                    <div class="dop__text">
+                                        <p class="dop__name">Моцарелла</p>
+                                        <p class="dop__price">28 ₽</p>
+                                    </div>
+                                    <input class="dop__input" type="checkbox">
+                                    <img src="./icons/dop__check.svg" alt="check" class="dop__check__icon d-none">
+                                </label>
+                                <label class="form__dop dop">
+                                    <img src="./img/filling/pepper.jpg" alt="перец">
+                                    <div class="dop__text">
+                                        <p class="dop__name">Перец</p>
+                                        <p class="dop__price">28 ₽</p>
+                                    </div>
+                                    <input class="dop__input" type="checkbox">
+                                    <img src="./icons/dop__check.svg" alt="check" class="dop__check__icon d-none">
+                                </label>
+                                <label class="form__dop dop">
+                                    <img src="./img/filling/chicken_hot.jpg" alt="ветчина">
+                                    <div class="dop__text">
+                                        <p class="dop__name">Ветчина</p>
+                                        <p class="dop__price">28 ₽</p>
+                                    </div>
+                                    <input class="dop__input" type="checkbox">
+                                    <img src="./icons/dop__check.svg" alt="check" class="dop__check__icon d-none">
+                                </label>
+                            </div>
+                            <div class="form__button">
+                                <button class="button button--orange">Добавить в корзину за 625 ₽</button>
+                            </div>
+                        </form>
+                    </div>
             </div>
             <button class="modal__close">
                 <img src="./icons/close.svg" alt="Иконка закрыть">
