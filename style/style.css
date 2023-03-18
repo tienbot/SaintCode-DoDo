@@ -529,6 +529,7 @@ h2 {
   font-weight: 600;
   line-height: 33px;
   margin-bottom: 3px;
+  max-width: 270px;
 }
 .modal__descr {
   font-weight: 400;
@@ -616,6 +617,17 @@ h2 {
 .modal .form__button button {
   max-width: 320px;
   width: 100%;
+}
+
+.modal2 {
+  max-width: 740px;
+  height: 389px;
+}
+.modal2__descr {
+  margin-bottom: 15px;
+}
+.modal2__descr2 {
+  color: #4D4D4D;
 }
 
 .dop {
