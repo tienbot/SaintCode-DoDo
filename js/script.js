@@ -1,7 +1,7 @@
 (function(){
     "use strict"
 
-    const html = document.getElementsByTagName('html')
+    const html = document.documentElement
     const price = document.querySelectorAll('.card__price')
     const pizza = document.querySelector('#pizza')
     const buy = document.querySelectorAll('.buy')
@@ -31,8 +31,8 @@
     // вызов модалки
     for(let i = 0; i < buy.length; i++) {
         buy[i].addEventListener("click", (event) => {
-            if (buy[i].classList.contains('pizza')){
-                console.log('pizza contain')
+            // html.style.overflow = "hidden"
+            if (buy[i].classList.contains("pizza")){
                 modal[0].classList.remove("d-none")
             } else {
                 modal[1].classList.remove("d-none")
@@ -42,8 +42,24 @@
 
     // закрыть модалку
     for(let i = 0; i < close.length; i++) {
-        close[i].addEventListener("click", (event) => {
+        function closeModal() {
             modal[i].classList.add("d-none")
+            // html.style.overflow = "auto"
+        }
+
+        close[i].addEventListener("click", (event) => {
+            closeModal()
+        })
+
+        modal[i].querySelector('.modal__buy').addEventListener("click", (event) => {
+            closeModal()
+        })
+
+        modal[i].addEventListener("click", (event) => {
+            const isOutside = !event.target.closest('.modal');
+            if (isOutside) {
+                closeModal()
+            }
         })
     }
 

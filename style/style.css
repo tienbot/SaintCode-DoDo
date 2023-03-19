@@ -577,6 +577,7 @@ h2 {
   padding: 2px;
   display: flex;
   align-items: center;
+  margin: 0 auto;
   margin-bottom: 10px;
 }
 .modal .form__radio {
@@ -597,6 +598,9 @@ h2 {
 .modal .form__radio span {
   font-size: 12px;
   opacity: 0.7;
+}
+.modal .form__radio span:hover {
+  cursor: pointer;
 }
 .modal .form h3 {
   margin-top: 17px;
@@ -622,6 +626,7 @@ h2 {
 .modal2 {
   max-width: 740px;
   height: 389px;
+  top: 20vh;
 }
 .modal2__descr {
   margin-bottom: 15px;
@@ -631,7 +636,7 @@ h2 {
 }
 
 .dop {
-  margin-top: 3px;
+  padding-top: 3px;
   position: relative;
   overflow: hidden;
   width: 100px;
@@ -819,10 +824,6 @@ h2 {
     height: 108px;
     margin-right: 10px;
   }
-  .product {
-    padding-top: 0;
-    margin-bottom: 30px;
-  }
   .product .content {
     grid-template-columns: 1fr;
     row-gap: 0;
@@ -939,6 +940,58 @@ h2 {
   }
   .footer .mobile {
     display: block;
+  }
+  .modal {
+    top: 0;
+    height: -webkit-fill-available;
+  }
+  .modal__content {
+    flex-direction: column;
+    border-radius: unset;
+  }
+  .modal__img {
+    padding-top: 26px;
+    margin: 0 0 6px 0;
+  }
+  .modal__border .border {
+    display: none;
+  }
+  .modal__settings {
+    max-width: unset;
+    background: unset;
+    padding: 0 16px;
+    margin-bottom: 40px;
+  }
+  .modal__pizza {
+    width: 288px;
+    height: 288px;
+  }
+  .modal .form__dops {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8px;
+    margin-bottom: 78px;
+  }
+  .modal .form__button {
+    bottom: 16px;
+    display: flex;
+    justify-content: center;
+    margin-left: -16px;
+  }
+  .modal .form__button button {
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    max-width: 288px;
+  }
+  .dop {
+    width: 140px;
+  }
+  .dop img {
+    margin: 0 auto;
+  }
+  .dop:first-of-type img {
+    margin: 10px 0 0 0;
   }
 }
 

@@ -481,6 +481,7 @@ h2
             padding: 2px
             display: flex
             align-items: center
+            margin: 0 auto
             margin-bottom: 10px
         &__radio
             display: inline-block
@@ -497,6 +498,8 @@ h2
             span
                 font-size: 12px
                 opacity: 0.7
+                &:hover
+                    cursor: pointer
         h3
             margin-top: 17px
             font-weight: 600
@@ -517,13 +520,14 @@ h2
 .modal2
     max-width: 740px
     height: 389px
+    top: 20vh
     &__descr
         margin-bottom: 15px
     &__descr2
         color: #4D4D4D
 
 .dop
-    margin-top: 3px
+    padding-top: 3px
     position: relative
     overflow: hidden
     width: 100px
@@ -652,7 +656,6 @@ h2
             align-items: center
             justify-content: center
 
-
     .slider
         margin-top: 0
         justify-content: flex-start
@@ -682,8 +685,7 @@ h2
             margin-right: 10px
     
     .product
-        padding-top: 0
-        margin-bottom: 30px
+        // padding-top: 30px
         .content
             grid-template-columns: 1fr
             row-gap: 0
@@ -774,15 +776,54 @@ h2
             .wrapper
                 align-items: flex-start
                 flex-direction: column-reverse
-        // &__other
-        //     ul
-        //         flex-direction: column
-        //         margin-bottom: 20px
-        //     li
-        //         margin-bottom: 10px
-        //         a
-        //             line-height: 22px
         &__social
             margin-bottom: 20px
         .mobile
             display: block
+    
+    .modal
+        top: 0
+        height: -webkit-fill-available
+        &__content
+            flex-direction: column
+            border-radius: unset
+        &__img
+            padding-top: 26px
+            margin: 0 0 6px 0
+        &__border
+            .border
+                display: none
+        &__settings
+            max-width: unset
+            background: unset
+            padding: 0 16px
+            margin-bottom: 40px
+        &__pizza
+            width: 288px
+            height: 288px
+    
+        .form
+            &__dops
+                grid-template-columns: repeat(2, 1fr)
+                column-gap: 8px
+                margin-bottom: 78px
+            &__button
+                bottom: 16px
+                display: flex
+                justify-content: center
+                margin-left: -16px
+                button
+                    height: 48px
+                    font-size: 16px
+                    font-weight: 600
+                    line-height: 22px
+                    max-width: 288px
+    
+    .dop
+        width: 140px
+        img
+            margin: 0 auto
+        &:first-of-type
+            img
+                margin: 10px 0 0 0
+
