@@ -10,6 +10,7 @@
     const dop = document.querySelectorAll('.dop__input')
     const dop_border = document.querySelectorAll('.form__dop')
     const dop_icon = document.querySelectorAll('.dop__check__icon')
+    const tag = document.querySelectorAll('.form__tag')
 
 
     // адаптив стилей
@@ -73,5 +74,21 @@
             icon.classList.toggle("d-none")
         })
     }
+
+    // модалка, стилизация тегов при вкл/откл чекбокса
+    addEventListener("click", (event) => {
+        for(let i = 0; i < tag.length; i++) {
+            const checkbox = tag[i].querySelector('input')
+            const label = tag[i].querySelector('label')
+            
+            if(checkbox.checked){
+                label.style.borderBottom = '1px dashed #72788B'
+                label.style.textDecoration= 'unset'
+            } else {
+                label.style.borderBottom= 'unset'
+                label.style.textDecoration= 'line-through'
+            }
+        }
+    })
 
 }())

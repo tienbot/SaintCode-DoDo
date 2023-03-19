@@ -33,7 +33,7 @@ h2
         font-size: 12px
 
 .button
-    height: 40px
+    min-height: 40px
     font-weight: 400
     font-size: 16px
     color: #D15700
@@ -470,8 +470,6 @@ h2
             line-height: 15px
             color: #4D4D4D
             margin-bottom: 3px
-            label
-                border-bottom: 1px dashed #72788B
         &__radios
             max-width: 320px
             width: 100%
@@ -535,6 +533,7 @@ h2
     background: #FFFFFF
     box-shadow: 0px 4px 20px rgba(6, 5, 50, 0.05)
     border-radius: 12px
+    margin: 0 auto
     &__text
         position: absolute
         text-align: center
@@ -584,6 +583,10 @@ h2
                 margin-bottom: 10px
                 a
                     line-height: 22px
+    .modal
+        &__border
+            .border
+                display: none
 
 @media (max-width: 768px)
     .product
@@ -592,6 +595,15 @@ h2
     .footer
         &__top
             margin-bottom: 20px
+    .modal
+        .form
+            &__dops
+                grid-template-columns: repeat(2, 1fr)
+            &__button
+                display: flex
+                justify-content: center
+                width: -webkit-fill-available
+                margin-right: 30px
 
 @media (max-width: 576px)
     .header
@@ -790,9 +802,6 @@ h2
         &__img
             padding-top: 26px
             margin: 0 0 6px 0
-        &__border
-            .border
-                display: none
         &__settings
             max-width: unset
             background: unset
@@ -804,14 +813,11 @@ h2
     
         .form
             &__dops
-                grid-template-columns: repeat(2, 1fr)
                 column-gap: 8px
                 margin-bottom: 78px
             &__button
                 bottom: 16px
-                display: flex
-                justify-content: center
-                margin-left: -16px
+                margin: 0 0 0 -16px
                 button
                     height: 48px
                     font-size: 16px

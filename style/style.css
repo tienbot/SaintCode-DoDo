@@ -38,7 +38,7 @@ h2 {
 }
 
 .button {
-  height: 40px;
+  min-height: 40px;
   font-weight: 400;
   font-size: 16px;
   color: #D15700;
@@ -565,9 +565,6 @@ h2 {
   color: #4D4D4D;
   margin-bottom: 3px;
 }
-.modal .form__tag label {
-  border-bottom: 1px dashed #72788B;
-}
 .modal .form__radios {
   max-width: 320px;
   width: 100%;
@@ -644,6 +641,7 @@ h2 {
   background: #FFFFFF;
   box-shadow: 0px 4px 20px rgba(6, 5, 50, 0.05);
   border-radius: 12px;
+  margin: 0 auto;
 }
 .dop__text {
   position: absolute;
@@ -706,6 +704,9 @@ h2 {
   .footer__other li a {
     line-height: 22px;
   }
+  .modal__border .border {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .product .content {
@@ -713,6 +714,15 @@ h2 {
   }
   .footer__top {
     margin-bottom: 20px;
+  }
+  .modal .form__dops {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .modal .form__button {
+    display: flex;
+    justify-content: center;
+    width: -webkit-fill-available;
+    margin-right: 30px;
   }
 }
 @media (max-width: 576px) {
@@ -953,9 +963,6 @@ h2 {
     padding-top: 26px;
     margin: 0 0 6px 0;
   }
-  .modal__border .border {
-    display: none;
-  }
   .modal__settings {
     max-width: unset;
     background: unset;
@@ -967,15 +974,12 @@ h2 {
     height: 288px;
   }
   .modal .form__dops {
-    grid-template-columns: repeat(2, 1fr);
     column-gap: 8px;
     margin-bottom: 78px;
   }
   .modal .form__button {
     bottom: 16px;
-    display: flex;
-    justify-content: center;
-    margin-left: -16px;
+    margin: 0 0 0 -16px;
   }
   .modal .form__button button {
     height: 48px;
