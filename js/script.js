@@ -5,8 +5,8 @@
     const price = document.querySelectorAll('.card__price')
     const pizza = document.querySelector('#pizza')
     const buy = document.querySelectorAll('.buy')
-    const modal = document.querySelector('.modal__back')
-    const close = document.querySelector('.modal__close')
+    const modal = document.querySelectorAll('.modal__back')
+    const close = document.querySelectorAll('.modal__close')
     const dop = document.querySelectorAll('.dop__input')
     const dop_border = document.querySelectorAll('.form__dop')
     const dop_icon = document.querySelectorAll('.dop__check__icon')
@@ -31,14 +31,21 @@
     // вызов модалки
     for(let i = 0; i < buy.length; i++) {
         buy[i].addEventListener("click", (event) => {
-            modal.classList.remove("d-none")
+            if (buy[i].classList.contains('pizza')){
+                console.log('pizza contain')
+                modal[0].classList.remove("d-none")
+            } else {
+                modal[1].classList.remove("d-none")
+            }
         })
     }
 
     // закрыть модалку
-    close.addEventListener("click", (event) => {
-        modal.classList.add("d-none")
-    })
+    for(let i = 0; i < close.length; i++) {
+        close[i].addEventListener("click", (event) => {
+            modal[i].classList.add("d-none")
+        })
+    }
 
     // модалка, выбрать/убрать доп
     for(let i = 0; i < dop.length; i++) {
@@ -50,4 +57,5 @@
             icon.classList.toggle("d-none")
         })
     }
+
 }())
