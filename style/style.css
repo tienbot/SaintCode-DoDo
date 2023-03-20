@@ -4,6 +4,10 @@
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .d-none {
   display: none !important;
 }
@@ -38,7 +42,7 @@ h2 {
 }
 
 .button {
-  min-height: 40px;
+  height: 40px;
   font-weight: 400;
   font-size: 16px;
   color: #D15700;
@@ -222,8 +226,8 @@ h2 {
 .slider__dotts {
   position: absolute;
   bottom: 17px;
-  display: flex;
-  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
   transition: all 0.5s ease-out;
   opacity: 0;
 }
@@ -244,6 +248,9 @@ h2 {
 
 .new {
   overflow: hidden;
+}
+.new::-webkit-scrollbar {
+  display: none;
 }
 .new h2 {
   margin-bottom: 20px;
@@ -522,6 +529,9 @@ h2 {
   background: #FCFCFC;
   overflow: auto;
 }
+.modal__settings::-webkit-scrollbar {
+  display: none;
+}
 .modal__settings__wrapper {
   background: #FCFCFC;
 }
@@ -545,6 +555,12 @@ h2 {
   top: 20px;
   right: -40px;
   padding: 0;
+}
+.modal__close .icon__close {
+  display: block;
+}
+.modal__close .icon__arrow {
+  display: none;
 }
 .modal__close img {
   width: 24px;
@@ -737,10 +753,13 @@ h2 {
     display: none;
   }
   .menu {
-    overflow: hidden;
+    overflow: auto;
     order: -1;
     margin-bottom: 20px;
     padding: 13px 16px;
+  }
+  .menu::-webkit-scrollbar {
+    display: none;
   }
   .menu .content {
     width: max-content;
@@ -821,6 +840,7 @@ h2 {
     display: block;
   }
   .new {
+    overflow: auto;
     order: -2;
   }
   .new .content {
@@ -987,6 +1007,24 @@ h2 {
     font-weight: 600;
     line-height: 22px;
     max-width: 288px;
+  }
+  .modal__close {
+    top: 16px;
+    left: 16px;
+    background: red;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
+  }
+  .modal__close .icon__close {
+    display: none;
+  }
+  .modal__close .icon__arrow {
+    display: block;
+    margin: 0 auto;
+    margin-top: 4px;
   }
   .dop {
     width: 140px;
