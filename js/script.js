@@ -1,7 +1,7 @@
 (function(){
     "use strict"
 
-    const html = document.documentElement
+    const html = document.querySelector('html')
     const price = document.querySelectorAll('.card__price')
     const pizza = document.querySelector('#pizza')
     const buy = document.querySelectorAll('.buy')
@@ -11,7 +11,7 @@
     const dop_border = document.querySelectorAll('.form__dop')
     const dop_icon = document.querySelectorAll('.dop__check__icon')
     const tag = document.querySelectorAll('.form__tag')
-
+// 
 
     // адаптив стилей
     addEventListener("resize", (event) => {
@@ -32,7 +32,7 @@
     // вызов модалки
     for(let i = 0; i < buy.length; i++) {
         buy[i].addEventListener("click", (event) => {
-            // html.style.overflow = "hidden"
+            html.style.overflow = "hidden"
             if (buy[i].classList.contains("pizza")){
                 modal[0].classList.remove("d-none")
             } else {
@@ -45,7 +45,7 @@
     for(let i = 0; i < close.length; i++) {
         function closeModal() {
             modal[i].classList.add("d-none")
-            // html.style.overflow = "auto"
+            html.style.overflow = "auto"
         }
 
         close[i].addEventListener("click", (event) => {
