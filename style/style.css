@@ -138,6 +138,9 @@ h2 {
   justify-content: space-between;
   margin-bottom: 28px;
 }
+.header__content a {
+  color: #000;
+}
 .header__phone {
   text-align: right;
 }

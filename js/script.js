@@ -33,6 +33,7 @@
     for(let i = 0; i < buy.length; i++) {
         buy[i].addEventListener("click", (event) => {
             html.style.overflow = "hidden"
+            //если в карточке есть класс пицца вызывается модалка пиццы
             if (buy[i].classList.contains("pizza")){
                 modal[0].classList.remove("d-none")
             } else {
@@ -43,28 +44,28 @@
 
     // закрыть модалку
     for(let i = 0; i < close.length; i++) {
-        function closeModal() {
+        function closeModal(i) {
             modal[i].classList.add("d-none")
             html.style.overflow = "auto"
         }
 
         close[i].addEventListener("click", (event) => {
-            closeModal()
+            closeModal(i)
         })
 
         modal[i].querySelector('.modal__buy').addEventListener("click", (event) => {
-            closeModal()
+            closeModal(i)
         })
 
         modal[i].addEventListener("click", (event) => {
             const isOutside = !event.target.closest('.modal');
             if (isOutside) {
-                closeModal()
+                closeModal(i)
             }
         })
     }
 
-    // модалка, выбрать/убрать доп
+    // модалка, выбрать/убрать доп ингридиент
     for(let i = 0; i < dop.length; i++) {
         const check =  dop[i]
         const border = dop_border[i]

@@ -17,13 +17,13 @@
         <header class="header">
             <div class="container">
                 <div class="header__content">
-                    <div class="header__logo logo">
+                    <a href="index.html" class="header__logo logo">
                         <img src="./icons/logo.svg" alt="логотип">
                         <div class="logo__text">
                             <h1>ДОДО ПИЦЦА</h1>
                             <p>Сеть пиццерий  №1 в России</p>
                         </div>
-                    </div>
+                    </a>
                     <div class="header__phone">
                         <a href="tel:+88003020060">8 800 302-00-60</a>
                         <p>Звонок бесплатный</p>
@@ -44,7 +44,7 @@
                             <li><a href="#other">Другие товары</a></li>
                         </ul>
                     </nav>
-                    <a href="#" class="button button--orange menu__basket">
+                    <a href="basket_1.html" class="button button--orange menu__basket">
                         <span>Корзина</span>
                         <img src="./icons/basket.svg" alt="корзина">
                         <div class="menu__quantity">2</div>
@@ -561,7 +561,7 @@
                     <div class="modal__settings">
                         <h2 class="modal__title">Чиззи чеддер</h2>
                         <p class="modal__descr">30 см, традиционное тесто, 480 г</p>
-                        <form action="" class="form"">
+                        <form action="" class="form">
                             <div class="form__tags">
                                 <div class="form__tag">
                                     <label for="ham">Ветчина</label>
@@ -569,7 +569,7 @@
                                 </div>
                                 <div class="form__tag tag__permament">
                                     <label for="chedder">сыр чеддер</label>
-                                    <input type="checkbox" name="1" id="chedder" checked">
+                                    <input type="checkbox" name="1" id="chedder" checked onclick="return false"">
                                 </div>
                                 <div class="form__tag">
                                     <label for="papper">сладкий перец</label>
@@ -577,11 +577,11 @@
                                 </div>
                                 <div class="form__tag tag__permament">
                                     <label for="mozzarella">моцарелла</label>
-                                    <input type="checkbox" name="1" id="mozzarella" checked onclick="return false;">
+                                    <input type="checkbox" name="1" id="mozzarella" checked onclick="return false">
                                 </div>
                                 <div class="form__tag tag__permament">
                                     <label for="tomato__sauce">томатный соус</label>
-                                    <input type="checkbox" name="1" id="tomato__sauce" checked onclick="return false;">
+                                    <input type="checkbox" name="1" id="tomato__sauce" checked onclick="return false">
                                 </div>
                                 <div class="form__tag">
                                     <label for="garlick">чеснок</label>
@@ -713,7 +713,7 @@
                         <h2 class="modal__title">Рулетики с ананасами + Рулетики с брусникой, 16 шт</h2>
                         <p class="modal__descr modal2__descr">16 шт</p>
                         <p class="modal__descr modal2__descr2">Микс рулетиков со сгущенным молоком: 8 штук с ананасом и корицей, 8 штук с брусникой</p>
-                        <form action="" class="form" onclick="return false;">
+                        <form action="" class="form" onclick="return false">
                             <div class="form__button">
                                 <button class="button button--orange modal__buy">Добавить в корзину за 625 ₽</button>
                             </div>
