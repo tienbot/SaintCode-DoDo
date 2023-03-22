@@ -206,8 +206,6 @@ h2
 
 .new
     overflow: hidden
-    &::-webkit-scrollbar
-        display: none
     
     h2
         margin-bottom: 20px
@@ -573,6 +571,25 @@ h2
     &:hover
         cursor: pointer
 
+.basket
+    header
+        border-bottom: 1px solid #E1E1E8
+        margin-bottom: 70px
+    &__container
+            max-width: 700px
+            overflow: auto
+    h1.title
+        font-weight: 600
+        font-size: 36px
+        line-height: 49px
+    .new
+        margin-bottom: 65px
+        .content
+            height: unset
+        &__card
+            box-shadow: unset
+            outline: 1px solid #E1E1E8
+
 
 @media (max-width: 992px)
     .product
@@ -699,8 +716,11 @@ h2
             display: block   
     
     .new
-        overflow: auto
         order: -2
+        .container
+            overflow: auto
+            &::-webkit-scrollbar
+                display: none
         .content
             margin-bottom: 30px
         h2

@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="order">
+    <div class="order basket">
         <header class="header">
             <div class="container">
                 <div class="header__content">
@@ -24,31 +24,50 @@
                             <p>Сеть пиццерий  №1 в России</p>
                         </div>
                     </a>
-                    <div class="header__phone">
-                        <a href="tel:+88003020060">8 800 302-00-60</a>
-                        <p>Звонок бесплатный</p>
-                    </div>
                 </div>
             </div>
         </header>
         <main>
-            <section class="menu">
-                <div class="content">
-                    <nav class="menu__nav">
-                        <ul>
-                            <li class="active"><a href="#pizza">Пицца</a></li>
-                            <li><a href="#combo">Комбо</a></li>
-                            <li><a href="#snacks">Закуски</a></li>
-                            <li><a href="#deserts">Десерты</a></li>
-                            <li><a href="#drinks">Напити</a></li>
-                            <li><a href="#other">Другие товары</a></li>
-                        </ul>
-                    </nav>
-                    <a href="#" class="button button--orange menu__basket">
-                        <span>Корзина</span>
-                        <img src="./icons/basket.svg" alt="корзина">
-                        <div class="menu__quantity">2</div>
-                    </a>
+            <section>
+                <div class="container basket__container">
+                    <h1 class="title">Корзина</h1>
+                </div>
+            </section>
+            <section class="new">
+                <div class="container basket__container">
+                    <h2>Добавить к заказу?</h2>
+                </div>
+                <div class="container basket__container">
+                    <div class="content">
+                        <div class="new__card buy pizza">
+                            <img src="./img/pizza/cezar/cezar-traditional-big.jpeg" alt="Пицца Цезарь">
+                            <div class="new__text">
+                                <div class="new__name">Цезарь</div>
+                                <div class="new__price">от 445 ₽</div>
+                            </div>
+                        </div>
+                        <div class="new__card buy pizza">
+                            <img src="./img/pizza/tender-salmon/tender-salomon-traditional-small.jpeg" alt="Нежный лосось">
+                            <div class="new__text">
+                                <div class="new__name">Нежный лосось</div>
+                                <div class="new__price">от 495 ₽</div>
+                            </div>
+                        </div>
+                        <div class="new__card buy pizza">
+                            <img src="./img/combo/combo_2.jpg" alt="2 пиццы">
+                            <div class="new__text">
+                                <div class="new__name">2 пиццы</div>
+                                <div class="new__price">899 ₽</div>
+                            </div>
+                        </div>
+                        <div class="new__card buy pizza">
+                            <img src="./img/pizza/carbonara/carbonara-traditional-small.jpeg" alt="Пицца Карбонара">
+                            <div class="new__text">
+                                <div class="new__name">Карбонара</div>
+                                <div class="new__price">от 395 ₽</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
