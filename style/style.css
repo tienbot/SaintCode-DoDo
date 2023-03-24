@@ -155,6 +155,36 @@ h2 {
   line-height: 24.5px;
   color: #999;
 }
+.header__steps {
+  display: flex;
+  justify-content: space-between;
+  max-width: 401px;
+  width: 100%;
+}
+.header__steps .step {
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.5;
+  height: 52px;
+}
+.header__steps .step__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 1px solid #424242;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-weight: 700;
+  margin-bottom: 1px;
+}
+.header__steps .step__active {
+  opacity: 1;
+}
 
 .menu {
   position: sticky;
