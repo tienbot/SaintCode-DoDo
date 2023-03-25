@@ -731,6 +731,7 @@ h2 {
 .basket__container {
   max-width: 700px;
   overflow: auto;
+  padding: 0;
 }
 .basket__container::-webkit-scrollbar {
   display: none;
@@ -748,7 +749,19 @@ h2 {
 }
 .basket .new__card {
   box-shadow: unset;
-  outline: 1px solid #E1E1E8;
+  border: 1px solid #E1E1E8;
+}
+.basket .price {
+  text-align: end;
+}
+.basket .price p {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 35px;
+}
+.basket .price p span {
+  margin-left: 14px;
+  color: #F96900;
 }
 
 @media (max-width: 992px) {
