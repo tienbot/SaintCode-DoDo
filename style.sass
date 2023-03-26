@@ -55,6 +55,12 @@ h2
         &:hover
             color: #fff
             background-color: #ED5D08
+    &--grey
+        color: #73798C
+        background-color: #F3F3F7
+        &:hover
+            color:  #fff
+            background-color:  #73798C
 
 .card
     position: relative
@@ -613,6 +619,8 @@ h2
         line-height: 49px
     .new
         margin-bottom: 65px
+        h2
+            font-weight: 600
         .content
             height: unset
         &__card
@@ -620,6 +628,7 @@ h2
             border: 1px solid #E1E1E8
     .price
         text-align: end
+        margin-bottom: 27px
         p
             font-weight: 600
             font-size: 26px
@@ -627,6 +636,26 @@ h2
             span
                 margin-left: 14px
                 color: #F96900
+    .buttons
+        display: flex
+        justify-content: space-between
+        a
+            padding: 13px 18px
+            height: unset
+            display: flex
+            justify-content: space-around
+            width: 100%
+            max-width: 234px
+        span
+            // &:after
+            //     content: url('data:image/svg+xml;utf8,<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L7 7L1 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>')
+        .back
+            img
+                transform: rotate(180deg)
+                filter: invert(54%) sepia(7%) saturate(946%) hue-rotate(188deg) brightness(86%) contrast(82%)
+            &:hover
+                img
+                    filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(233deg) brightness(92%) contrast(108%)
 
 
 @media (max-width: 992px)

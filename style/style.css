@@ -67,6 +67,14 @@ h2 {
   color: #fff;
   background-color: #ED5D08;
 }
+.button--grey {
+  color: #73798C;
+  background-color: #F3F3F7;
+}
+.button--grey:hover {
+  color: #fff;
+  background-color: #73798C;
+}
 
 .card {
   position: relative;
@@ -744,6 +752,9 @@ h2 {
 .basket .new {
   margin-bottom: 65px;
 }
+.basket .new h2 {
+  font-weight: 600;
+}
 .basket .new .content {
   height: unset;
 }
@@ -753,6 +764,7 @@ h2 {
 }
 .basket .price {
   text-align: end;
+  margin-bottom: 27px;
 }
 .basket .price p {
   font-weight: 600;
@@ -762,6 +774,25 @@ h2 {
 .basket .price p span {
   margin-left: 14px;
   color: #F96900;
+}
+.basket .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.basket .buttons a {
+  padding: 13px 18px;
+  height: unset;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 234px;
+}
+.basket .buttons .back img {
+  transform: rotate(180deg);
+  filter: invert(54%) sepia(7%) saturate(946%) hue-rotate(188deg) brightness(86%) contrast(82%);
+}
+.basket .buttons .back:hover img {
+  filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(233deg) brightness(92%) contrast(108%);
 }
 
 @media (max-width: 992px) {
