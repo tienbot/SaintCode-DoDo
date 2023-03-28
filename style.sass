@@ -613,12 +613,16 @@ h2
             padding: 0
             &::-webkit-scrollbar
                 display: none
+            .title_wrapper
+                display: flex
+                justify-content: space-between
+                margin-bottom: 31px
     h1.title
         font-weight: 600
         font-size: 36px
         line-height: 49px
     .new
-        margin-bottom: 65px
+        margin-bottom: 10px
         h2
             font-weight: 600
         .content
@@ -639,13 +643,17 @@ h2
     .buttons
         display: flex
         justify-content: space-between
+        margin-bottom: 70px
         a
             padding: 13px 18px
             height: unset
             display: flex
             justify-content: space-around
             width: 100%
-            max-width: 234px
+            max-width: 220px
+        &__basket2
+            a
+                max-width: 270px
         span
             // &:after
             //     content: url('data:image/svg+xml;utf8,<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L7 7L1 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>')

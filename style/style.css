@@ -744,13 +744,18 @@ h2 {
 .basket__container::-webkit-scrollbar {
   display: none;
 }
+.basket__container .title_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 31px;
+}
 .basket h1.title {
   font-weight: 600;
   font-size: 36px;
   line-height: 49px;
 }
 .basket .new {
-  margin-bottom: 65px;
+  margin-bottom: 10px;
 }
 .basket .new h2 {
   font-weight: 600;
@@ -778,6 +783,7 @@ h2 {
 .basket .buttons {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 70px;
 }
 .basket .buttons a {
   padding: 13px 18px;
@@ -785,7 +791,10 @@ h2 {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  max-width: 234px;
+  max-width: 220px;
+}
+.basket .buttons__basket2 a {
+  max-width: 270px;
 }
 .basket .buttons .back img {
   transform: rotate(180deg);
