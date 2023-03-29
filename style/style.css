@@ -753,6 +753,7 @@ h2 {
   font-weight: 600;
   font-size: 36px;
   line-height: 49px;
+  margin-bottom: 30px;
 }
 .basket .new {
   margin-bottom: 10px;
@@ -766,6 +767,20 @@ h2 {
 .basket .new__card {
   box-shadow: unset;
   border: 1px solid #E1E1E8;
+}
+.basket .new__name {
+  margin-bottom: 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.basket .new__price {
+  font-size: 14px;
+  height: 32px;
+  width: 96px;
+  font-weight: 400;
+  line-height: unset;
 }
 .basket .price {
   text-align: end;
