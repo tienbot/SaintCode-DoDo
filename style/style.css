@@ -825,7 +825,11 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 25px 0;
+  padding: 25px 0;
+  border-bottom: 1px solid #E1E1E8;
+}
+.basket .goods__row:first-child {
+  border-top: 1px solid #E1E1E8;
 }
 .basket .goods__wrapper {
   display: flex;
@@ -847,7 +851,6 @@ h2 {
   line-height: 14px;
   color: #73798C;
 }
-
 @media (max-width: 992px) {
   .product .content {
     grid-template-columns: repeat(3, 1fr);
