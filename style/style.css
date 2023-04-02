@@ -744,10 +744,23 @@ h2 {
 .basket__container::-webkit-scrollbar {
   display: none;
 }
+.basket__container .suptitle {
+  color: #73798C;
+  margin-bottom: 5px;
+}
 .basket__container .title_wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 31px;
+}
+.basket__container hr {
+  height: 4px;
+  background: #E2E2E9;
+  border: none;
+  border-radius: 4px;
+  margin: 0 0 9px 0;
+}
+.basket__container .address {
+  margin-bottom: 70px;
 }
 .basket h1.title {
   font-weight: 600;
@@ -851,6 +864,7 @@ h2 {
   line-height: 14px;
   color: #73798C;
 }
+
 @media (max-width: 992px) {
   .product .content {
     grid-template-columns: repeat(3, 1fr);
